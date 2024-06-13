@@ -1,0 +1,109 @@
+.container{
+    display: grid;
+    grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 1fr);
+    grid-template-areas: 
+    "ul"
+    "contacth1"
+    "informatie";
+}
+body{
+    background-color: aquamarine;
+}
+.navmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+    display: grid;
+    grid-area: ul;
+    grid-template-areas: 
+    "home toernooi gamestore verkoop info faq logo";
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.home{
+    grid-area: home;
+}
+#toernooi{
+    grid-area: toernooi;
+}
+.gamestore{
+    grid-area: gamestore;
+}
+.verkoop{
+    grid-area: verkoop;
+}
+.info{
+    grid-area: info;
+}
+.faq{
+    grid-area: faq;
+}
+.logo{
+    grid-area: logo;
+    width: 150px; height: 75px;
+    padding: 25px;
+}
+.capital{
+    font-size: 16px;
+    font-weight: bold;
+}
+.kaartafb{
+    width: 250px; height: fit-content;
+}
+.contacth1{
+    grid-area: contacth1;
+    text-align: center;
+}
+.contactinformatie{
+    display: flex;
+    justify-self: center;
+    grid-area: informatie;
+}
+.infodiv{
+    left: 100%;
+    top: 100%;
+    transform: translate(-25%, 0%);
+    border: 2px solid black;
+}
+.contactdiv{
+    left: 100%;
+    top: 100%;
+    transform: translate(50%, 0%);
+    border: 2px solid black;
+}
+.uitlegdiv{
+    left: 100%;
+    top: 100%;
+    transform: translate(50%, 0%);
+    border: 2px solid black;
+}
+.textfield{
+    margin-bottom: 10px;
+}
+#bericht{
+    margin-bottom: 10px;
+    height: 100px; width: fit-content;
+}
+#verzendenbtn{
+    height: fit-content; width: fit-content;
+    background-color: green;
+    font-size: 25px; color: white; font-weight: bold;
+}

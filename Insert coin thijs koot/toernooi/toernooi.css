@@ -1,0 +1,151 @@
+body{
+    background-color: aquamarine;
+    background-image: url('../afb/commando.jpeg'), url('../afb/merc.jpeg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 250px 100%, 250px 100%;
+    background-position: right, left;
+    display: grid;
+    grid-template-areas: 
+    "ul"
+    "koptekst" 
+    "bracket";
+}
+.navmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+    display: grid;
+    grid-area: ul;
+    grid-template-areas: 
+    "home toernooi gamestore verkoop info faq logo";
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.home{
+    grid-area: home;
+}
+#toernooi{
+    grid-area: toernooi;
+}
+.gamestore{
+    grid-area: gamestore;
+}
+.verkoop{
+    grid-area: verkoop;
+}
+.info{
+    grid-area: info;
+}
+.faq{
+    grid-area: faq;
+}
+.logo{
+    grid-area: logo;
+    width: 150px; height: 75px;
+    padding: 25px;
+}
+#koptekst{
+    grid-area: koptekst;
+    font-size: 20px; font-weight: bold;
+    text-align: center;
+}
+.tournament {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    grid-area: bracket;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.team {
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    border: thin solid black;
+    background-color: aliceblue;
+    margin-right: 10px;
+}
+#team1,
+#team3,
+#team5,
+#team7{
+    left: 100%;
+    top: 25%;
+    transform: translate(-325%, 50%);
+}
+#team1{
+    left: 100%;
+    top: 25%;
+    transform: translate(-280%, 50%);
+}
+#team2,
+#team4,
+#team6,
+#team8{
+    left: 100%;
+    top: 50%;
+    transform: translate(-325%, -50%);
+}
+#winner1,
+#winner2,
+#winner3,
+#winner4{
+    left: 100%;
+    top: 100%; 
+    transform: translate(-125%, 0%);
+}
+#finals1,
+#finals2{
+    left: 100%;
+    top: 100%;
+    transform: translate(75%, 0%);
+}
+#champion{
+    left: 100%;
+    top: 100%;
+    transform: translate(275%, 0%);
+}
+#inschrijfbtn{
+    background-color: #333;
+    color: white;
+    border: 3px solid white; border-radius: 5px;
+    font-size: medium;
+    text-align: center;
+    line-height: 50px;
+    width: 100px;
+    height: 50px;
+    left: 100%;
+    top: 100%;
+    transform: translate(350%, 0%);
+}

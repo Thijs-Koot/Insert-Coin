@@ -1,0 +1,108 @@
+.container{
+    display: grid;
+    grid-template-areas: 
+    "ul"
+    "faqkop"
+    "gesteldevragen";
+}
+body{
+    background-color: aquamarine;
+}
+.navmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+    display: grid;
+    grid-area: ul;
+    grid-template-areas: 
+    "home toernooi gamestore verkoop info faq logo";
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.home{
+    grid-area: home;
+}
+#toernooi{
+    grid-area: toernooi;
+}
+.gamestore{
+    grid-area: gamestore;
+}
+.verkoop{
+    grid-area: verkoop;
+}
+.info{
+    grid-area: info;
+}
+.faq{
+    grid-area: faq;
+}
+.logo{
+    grid-area: logo;
+    width: 150px; height: 75px;
+    padding: 25px;
+}
+.faqkop{
+    grid-area: faqkop;
+    justify-self: center;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .gesteldevragen{
+    grid-area: gesteldevragen;
+    display: grid;
+  }
+  #huntress{
+    width: 400px; height: fit-content;
+  }

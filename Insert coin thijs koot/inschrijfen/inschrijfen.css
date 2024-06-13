@@ -1,0 +1,116 @@
+body{
+    background-image: url('../afb/homeachtergrond.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-areas: 
+    "ul"
+    "contact"
+    "inschrijfdiv";
+}
+.navmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+    display: grid;
+    grid-area: ul;
+    grid-template-areas: 
+    "home toernooi gamestore verkoop info faq logo";
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.home{
+    grid-area: home;
+}
+#toernooi{
+    grid-area: toernooi;
+}
+.gamestore{
+    grid-area: gamestore;
+}
+.verkoop{
+    grid-area: verkoop;
+}
+.info{
+    grid-area: info;
+}
+.faq{
+    grid-area: faq;
+}
+.logo{
+    grid-area: logo;
+    width: 150px; height: 75px;
+    padding: 25px;
+}
+.contact{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    grid-area: contact;
+}
+.tekstdiv{
+    background-color: azure;
+    border: thin solid black;
+    height: fit-content; width: fit-content;
+    text-align: center;
+    padding: 10px;
+}
+.contactinfo{
+    padding-bottom: 10px;
+    border: thin solid black;
+    height: fit-content; width: fit-content;
+}
+#voorwaarden{
+    padding-top: 10px;
+    background-color: white;
+    border: thin solid black;
+    height: fit-content; width: fit-content;
+}
+#opmerking{
+    border: thin solid black;
+    height: 100px; width: 250px;
+}
+#contactdiv{
+    left: 100%;
+    top: 100%;
+    transform: translate(25%, 0%);
+}
+#verzenden{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: green;
+    text-align: center;
+}
+.inschrijfdiv{
+    display: flex;
+    grid-area: inschrijfdiv;
+}
+#verzendendiv{
+    padding-top: 10px;
+}
+#voidfiend{
+    width: 250px;
+    height: fit-content;
+    left: 100%;
+    top: 100%;
+    transform: translate(75%, 0%);
+}

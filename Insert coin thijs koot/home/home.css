@@ -1,0 +1,72 @@
+body{
+    background-image: url('../afb/homeachtergrond.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-areas: 
+    "ul";   
+}
+.navmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    max-height: 150px;
+    overflow: hidden;
+    background-color: #333;
+    display: grid;
+    grid-area: ul;
+    grid-template-areas: 
+    "home toernooi gamestore verkoop info faq logo";
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.home{
+    grid-area: home;
+}
+.toernooi{
+    grid-area: toernooi;
+}
+.gamestore{
+    grid-area: gamestore;
+}
+.verkoop{
+    grid-area: verkoop;
+}
+.info{
+    grid-area: info;
+}
+.faq{
+    grid-area: faq;
+}
+.logo{
+    grid-area: logo;
+    width: 150px; height: 75px;
+    padding: 25px;
+}
+.welkom{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+.welkomtekst{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}

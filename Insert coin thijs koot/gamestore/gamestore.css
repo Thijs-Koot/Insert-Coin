@@ -1,0 +1,84 @@
+body{
+    background-image: url('../afb/achtergrondgamestore.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-areas: 
+    "ul"
+    "aboutus"
+    "tekst";
+}
+.navmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+    display: grid;
+    grid-area: ul;
+    grid-template-areas: 
+    "home toernooi gamestore verkoop info faq logo";
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.home{
+    grid-area: home;
+}
+#toernooi{
+    grid-area: toernooi;
+}
+.gamestore{
+    grid-area: gamestore;
+}
+.verkoop{
+    grid-area: verkoop;
+}
+.info{
+    grid-area: info;
+}
+.faq{
+    grid-area: faq;
+}
+.logo{
+    grid-area: logo;
+    width: 150px; height: 75px;
+    padding: 25px;
+}
+.aboutus{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    grid-area: aboutus;
+}
+.tekstdiv{
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: center;
+    justify-self: center;
+    display: flex;
+    grid-area: tekst;
+}
+#gspic1{
+    justify-self: left;
+}
+#gspic2{
+    justify-self: right;
+}

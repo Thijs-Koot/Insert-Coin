@@ -1,0 +1,129 @@
+body{
+    background-image: url('../afb/achtergrondgamestore.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 1fr);
+    grid-template-areas: 
+    "ul"
+    "storeh1"
+    "teksth4"
+    "storestore";
+}
+.navmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+    display: grid;
+    grid-area: ul;
+    grid-template-areas: 
+    "home toernooi gamestore verkoop info faq logo";
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+.home{
+    grid-area: home;
+}
+#toernooi{
+    grid-area: toernooi;
+}
+.gamestore{
+    grid-area: gamestore;
+}
+.verkoop{
+    grid-area: verkoop;
+}
+.info{
+    grid-area: info;
+}
+.faq{
+    grid-area: faq;
+}
+.logo{
+    grid-area: logo;
+    width: 150px; height: 75px;
+    padding: 25px;
+}
+.store{
+    grid-area: storeh1;
+    text-align: center;
+}
+.teksth4{
+    grid-area: teksth4;
+    text-align: center;
+}
+.storestore{
+    grid-area: storestore;
+    justify-self: center;
+    display: flex;
+    grid-template-areas: 
+    "store1 store2 store3 store4";
+}
+.store1{
+    grid-area: store1;
+    padding-left: 25px;
+}
+.store1img{
+    width: 150px; height: fit-content;
+    border: 2px solid black;
+}
+.store2{
+    grid-area: store2;
+    padding-left: 25px;
+}
+.store2img{
+    width: 150px; height: fit-content;
+    border: 2px solid black;
+}
+.store3{
+    grid-area: store3;
+    padding-left: 25px;
+}
+.store3img{
+    width: 150px; height: fit-content;
+    border: 2px solid black;
+}
+.store4{
+    grid-area: store4;
+    padding-left: 25px;
+}
+.store4img{
+    width: 150px; height: fit-content;
+    border: 2px solid black;
+}
+.naam{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.prijs{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.voorraad{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
